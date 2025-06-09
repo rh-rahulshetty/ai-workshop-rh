@@ -10,6 +10,7 @@ Make sure you have the following installed **before** the workshop:
 
 - Python 3.10+
 - VS Code Editor
+- kubectl or oc
 
 ---
 

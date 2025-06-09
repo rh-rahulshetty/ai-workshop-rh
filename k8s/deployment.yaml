@@ -1,0 +1,57 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: vllm
+  labels:
+    app: vllm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vllm
+  template:
+    metadata:
+      labels:
+        app: vllm
+    spec:
+      containers:
+        - resources:
+            limits:
+              cpu: '2'
+              memory: 4Gi
+              nvidia.com/gpu: '1' # Important to set this to select GPU node
+            requests:
+              cpu: '10m'
+              memory: '100Mi'
+              nvidia.com/gpu: '1' 
+          name: server
+          args: [
+            "--model",
+            # Model weights to pull from HuggingFace
+            # You can choose from different models available at https://huggingface.co/RedHatAI
+            "RedHatAI/gemma-3-1b-it-quantized.w8a8",
+            "--dtype", "float16"
+          ]
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            # Models are downloaded under /.cache/ directory
+            - name: models-cache
+              mountPath: /.cache/
+            - name: shm
+              mountPath: /dev/shm
+            - name: shm
+              mountPath: /.config/
+          image: 'vllm/vllm-openai'
+      volumes:
+        - name: models-cache
+          persistentVolumeClaim:
+            # Change this based on PVC setup 
+            claimName: rashetty-pvc
+        - name: shm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 1Gi
