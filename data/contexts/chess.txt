@@ -1,0 +1,52 @@
+** The Game of Chess**
+
+Chess is a two-player strategy board game played on a checkered board with 64 squares arranged in an 8x8 grid. It is one of the world's most popular games, played by millions of people worldwide. The game is known for its strategic depth, requiring critical thinking, planning, and tactical calculation.
+
+**1. Objective of the Game:**
+The primary objective in chess is to **checkmate** the opponent's king. Checkmate occurs when the king is under direct attack (in 'check') and there is no legal move to escape the attack.
+
+**2. The Chessboard:**
+* An 8x8 grid of 64 squares, alternating light and dark colors.
+* The squares are identified by algebraic notation (e.g., a1, h8, e4).
+* The board is always set up so that the bottom-right square for both players is a light square (h1 for White, a8 for Black).
+
+**3. The Pieces and Their Movement:**
+Each player starts with 16 pieces:
+* **1 King (K):** Moves one square in any direction.
+* **1 Queen (Q):** Moves any number of squares in any straight direction (horizontally, vertically, or diagonally). Most powerful piece.
+* **2 Rooks (R):** Moves any number of squares horizontally or vertically.
+* **2 Bishops (B):** Moves any number of squares diagonally. They always stay on squares of the same color as their starting square.
+* **2 Knights (N):** Moves in an "L" shape: two squares in one direction (horizontally or vertically) and then one square perpendicular to that direction. They are the only pieces that can jump over other pieces.
+* **8 Pawns (p):**
+    * Move forward one square, except for their first move where they can move one or two squares forward.
+    * Capture diagonally one square forward.
+    * Cannot move backward.
+    * **Pawn Promotion:** If a pawn reaches the opposite end of the board, it must be promoted to a Queen, Rook, Bishop, or Knight (player's choice, usually a Queen).
+    * **En Passant:** A special pawn capture rule. If a pawn moves two squares forward from its starting position and lands beside an opponent's pawn, the opponent's pawn can capture it as if it had only moved one square. This must be done immediately on the very next turn.
+
+**4. Special Moves:**
+* **Castling:** A special move involving the king and one of the rooks. It allows the king to move two squares towards a rook, and the rook to move to the square the king skipped over. Conditions:
+    * Neither the king nor the chosen rook has moved previously.
+    * No pieces are between the king and the rook.
+    * The king is not currently in check, and does not pass through or land on any square that is under attack by an opponent's piece.
+* **Check:** When a king is under direct attack by an opponent's piece. The player whose king is in check must immediately make a legal move to get out of check (move the king, block the attack, or capture the attacking piece).
+* **Checkmate:** As defined above, the ultimate goal. The king is in check and cannot escape.
+
+**5. Game End Conditions (Other than Checkmate):**
+* **Stalemate:** The game is a draw when the player whose turn it is has no legal moves, but their king is *not* in check.
+* **Draw by Agreement:** Both players agree to a draw.
+* **Threefold Repetition:** A draw occurs if the same position appears three times, with the same player to move, and the same castling and en passant rights.
+* **Fifty-Move Rule:** A draw occurs if 50 consecutive moves have been made by both players without a pawn move or a capture.
+* **Insufficient Material:** A draw occurs if neither player has enough material to checkmate the opponent's king (e.g., King and Knight vs. King, or King and Bishop vs. King).
+
+**6. Phases of a Chess Game:**
+* **Opening:** The initial moves of the game, typically focused on developing pieces, controlling the center of the board, and king safety (often via castling). There are many recognized openings (e.g., Ruy Lopez, Sicilian Defense).
+* **Middlegame:** The phase after the opening, where pieces are fully developed, and players execute strategic plans, create attacks, and develop tactical opportunities.
+* **Endgame:** The final phase of the game, where few pieces remain on the board. King activity becomes more important, and pawn promotion often becomes a decisive factor.
+
+**7. Key Concepts & Terminology:**
+* **Material:** The total value of pieces a player has. Pieces have approximate values (Pawn=1, Knight/Bishop=3, Rook=5, Queen=9).
+* **Tactics:** Short-term sequences of moves that result in a tangible gain (e.g., fork, pin, skewer, discover attack).
+* **Strategy:** Long-term planning and positional considerations (e.g., pawn structure, control of open files, king safety, piece harmony).
+* **Tempo:** Gaining a move or time advantage.
+* **Initiative:** The ability to make threats that force the opponent to react.
